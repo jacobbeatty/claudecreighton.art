@@ -1,5 +1,4 @@
 import * as React from "react"
-import "/src/styles/global.css"
 
 // styles
 
@@ -7,7 +6,7 @@ import "/src/styles/global.css"
 const IndexPage = () => {
   return (
     <main>
-      <h1>CLAUDE CREIGHTON</h1>
+      <h1>CLAUDE CREIGHT0N</h1>
 
     </main>
   )
