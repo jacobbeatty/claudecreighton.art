@@ -1,14 +1,14 @@
 import * as React from "react"
-
+import { Container } from "../components"
 // styles
 
 // markup
 const IndexPage = () => {
   return (
-    <main>
+    <Container>
       <h1>CLAUDE CREIGHTON</h1>
 
-    </main>
+    </Container>
   )
 }
 
