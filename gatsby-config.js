@@ -26,14 +26,23 @@ module.exports = {
         icon: "src/images/icon.png",
       },
     },
+    `gatsby-plugin-transition-link`,
     "gatsby-transformer-sharp",
     {
       resolve: "gatsby-source-filesystem",
       options: {
         name: "images",
-        path: "./src/images/",
+        path: "./src/images/other",
       },
       __key: "images",
+    },
+    {
+      resolve: "gatsby-source-filesystem",
+      options: {
+        name: "art",
+        path: "./src/images/art",
+      },
+      __key: "art",
     },
   ],
 };

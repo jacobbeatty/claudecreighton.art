@@ -1,6 +1,8 @@
 import React from "react"
 import { createGlobalStyle, ThemeProvider } from "styled-components"
 import Theme from "./src/themes/theme"
+import './src/styles/animations.css'
+import { AnimatePresence } from 'framer-motion'
 
 const GlobalStyles = createGlobalStyle`
     * {
@@ -13,6 +15,7 @@ const GlobalStyles = createGlobalStyle`
         font-family: ${props => props.theme.fonts.main};
         background-color: ${props => [props.theme.colors.background]};
         height: 100%;
+        width: 100%;
     }
 
 `
@@ -23,3 +26,6 @@ export const wrapRootElement = ({ element }) => (
         {element}
     </ThemeProvider>
 )
+export const wrapPageElement = ({ element }) => (
+    <AnimatePresence exitBeforeEnter>{element}</AnimatePresence>
+);
