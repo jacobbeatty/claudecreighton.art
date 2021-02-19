@@ -7,6 +7,10 @@ export const GalleryWrapper = styled.div`
     align-items: left;
     justify-content: space-between;
     font-size: ${props => props.theme.sizes.header};
+    height: max-content;
+
+
+
 
     div{
         display: flex;
@@ -14,9 +18,11 @@ export const GalleryWrapper = styled.div`
     .image{
        width: 100%;
        flex-flow: wrap;
-
+       justify-content: flex-end;
+        height: max-content;
+        margin-bottom: 2vw;
        div{
-           width: 33%;
+           width: 19%;
            margin: .1vw;
            
        }

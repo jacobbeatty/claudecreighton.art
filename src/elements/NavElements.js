@@ -7,16 +7,23 @@ export const NavWrapper = styled.nav`
     align-items: center;
     justify-content: space-between;
     font-size: ${props => props.theme.sizes.header};
+    font-weight: 600;
+
+
+
 
     a{
         text-decoration: none;
         color: black;
         font-size: 1.3em;
+        z-index: ${props => props.theme.layers.nav};
+
     }
     div{
         display: flex;
         justify-content: space-between;
         width: 400px;
+        z-index: ${props => props.theme.layers.nav};
         a:hover{
             color: white;
             transition: .5s;

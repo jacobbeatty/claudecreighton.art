@@ -4,6 +4,17 @@ module.exports = {
   },
   plugins: [
     {
+      resolve: `gatsby-plugin-google-fonts`,
+      options: {
+        fonts: [
+          `roboto`,
+          `Manrope: 400, 700`,
+          `Newsreader: 400, 400i, 500, 600, 500i,700,700i `
+        ],
+        display: 'swap',
+      },
+    },
+    {
       resolve: "gatsby-source-contentful",
       options: {
         accessToken: "sJxkvpsSa4tV85ctNd_WIDPifD8JqoE2lDjy96hnM7A",

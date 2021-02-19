@@ -8,8 +8,10 @@ export const NavBar = () => {
     return (
 
         <NavWrapper>
+            <motion.div whileHover={{ letterSpacing: "1vw", transition: { duration: .2 } }} >
+                <Link to="/">CLAUDE CREIGHTON</Link>
+            </motion.div>
 
-            <Link url="/">CLAUDE CREIGHTON</Link>
             <motion.div>
                 <Link to="/bio" activeStyle={{ color: "red" }}>BIO</Link>
                 <Link to="/works" activeStyle={{ color: "red" }}>WORKS</Link>

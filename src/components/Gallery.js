@@ -4,11 +4,11 @@ import Img from "gatsby-image"
 import { StaticQuery, graphql } from 'gatsby'
 export const Gallery = () => {
 
-    return (
-        <GalleryWrapper>
-            <StaticQuery
-                query={
-                    graphql`
+  return (
+    <GalleryWrapper>
+      <StaticQuery
+        query={
+          graphql`
                     {
                         allFile(filter: {sourceInstanceName: {eq: "art"}}) {
                           edges {
@@ -38,11 +38,12 @@ export const Gallery = () => {
                       }
                       
             `
-                }
-                render={data => (
-                    <div className="image">{data.allFile.edges.map((edge) => (<Img fluid={edge.node.childImageSharp.fluid} alt={edge.node.name} />))}</div>
-                )}
-            />
-        </GalleryWrapper>
-    )
+        }
+        render={data => (
+          <div className="image ">{data.allFile.edges.map((edge) => (<Img fluid={edge.node.childImageSharp.fluid} alt={edge.node.name} />))}</div>
+        )}
+      />
+
+    </GalleryWrapper>
+  )
 }

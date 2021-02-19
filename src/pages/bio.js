@@ -1,6 +1,7 @@
 import * as React from "react"
 import { Container } from "../components"
 import { motion } from 'framer-motion'
+import { Bio } from '../components'
 
 
 const BioPage = () => {
@@ -14,7 +15,7 @@ const BioPage = () => {
                     duration: 1
                 }}
             >
-                <h1>fuck</h1>
+                <Bio></Bio>
             </motion.main>
         </Container>
     )
