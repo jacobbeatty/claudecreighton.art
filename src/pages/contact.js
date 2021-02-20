@@ -1,6 +1,7 @@
 import * as React from "react"
 import { Container } from "../components"
 import { motion } from 'framer-motion'
+import { Contact } from '../components'
 
 
 const ContactPage = () => {
@@ -14,10 +15,22 @@ const ContactPage = () => {
                     duration: 1
                 }}
             >
-                <h1>stack</h1>
+                <Contact></Contact>
             </motion.main>
         </Container>
     )
 }
 
 export default ContactPage
+
+export const query = graphql`
+query {
+    contactImg: file(relativePath: {eq: "contact.jpg"}) {
+      childImageSharp {
+        fluid(maxWidth: 500) {
+                  ...GatsbyImageSharpFluid
+        }
+      }
+    }
+  }
+`

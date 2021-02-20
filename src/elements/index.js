@@ -5,3 +5,5 @@ export * from './FilterElements'
 export * from './GalleryElements'
 export * from './LandingElements'
 export * from './BioElements'
+
+export * from './ContactElements'

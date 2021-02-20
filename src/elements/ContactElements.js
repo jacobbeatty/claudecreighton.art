@@ -1,6 +1,6 @@
 import styled from "styled-components"
 
-export const BioWrapper = styled.div`
+export const ContactWrapper = styled.div`
     grid-column: 1 / span 2;
     grid-row: 1 / 1;
     display: flex;
@@ -8,12 +8,12 @@ export const BioWrapper = styled.div`
     justify-content: space-between;
     font-size: ${props => props.theme.sizes.header};
 
-    .bioImg{
+    .contactImg{
         width: 65vw;
         height: 43vw;
     }
 
-    .bioText{
+    .contactText{
         background-color: #ffffffc4;
         font-size: 1.37vw;
         padding: 1vw;
@@ -31,14 +31,4 @@ export const BioWrapper = styled.div`
         }
     }
 
-
-    .bioSVG{
-        display: block;
-        margin: -1% auto auto auto;
-        font-family: 'Newsreader';
-        align-self: center;
-        width: 51vw;
-    }
-
 `
-
