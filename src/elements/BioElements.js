@@ -9,16 +9,19 @@ export const BioWrapper = styled.div`
     font-size: ${props => props.theme.sizes.header};
 
     .bioImg{
-        width: 65vw;
+        width: 1000%;
         height: 43vw;
     }
 
     .bioText{
         background-color: #ffffffc4;
-        font-size: 1.37vw;
+        font-size: 1.5vw;
         padding: 1vw;
         height: 43vw;
         animation: bioAnimation 2s 1 0s ease-in-out;
+        text-align: center;
+        font-weight: 500;
+
     }
 
 

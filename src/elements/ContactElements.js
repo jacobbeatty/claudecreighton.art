@@ -8,8 +8,10 @@ export const ContactWrapper = styled.div`
     justify-content: space-between;
     font-size: ${props => props.theme.sizes.header};
 
+
+
     .contactImg{
-        width: 65vw;
+        width: 40vw;
         height: 43vw;
     }
 
@@ -19,6 +21,25 @@ export const ContactWrapper = styled.div`
         padding: 1vw;
         height: 43vw;
         animation: bioAnimation 2s 1 0s ease-in-out;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        white-space: nowrap;
+
+        span{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 10vw;
+            padding: 1vw;
+            h1{
+                font-size: 2vw;
+            }
+            p{
+                font-size: 1.4vw;
+            }
+        }
+        
     }
 
 

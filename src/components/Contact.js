@@ -2,20 +2,9 @@ import { motion } from 'framer-motion'
 import React from 'react'
 import { ContactWrapper } from '../elements'
 import Img from 'gatsby-image'
-import { useStaticQuery } from 'gatsby'
 
-export const Contact = () => {
-    const data = useStaticQuery(graphql`
-    query contactImg{
-        contactImg: file(relativePath: {eq: "contact.jpg"}) {
-          childImageSharp {
-            fluid(maxWidth: 500) {
-                      ...GatsbyImageSharpFluid
-            }
-          }
-        }
-      }
-    `)
+export const Contact = ({ data }) => {
+
 
     return (
         <ContactWrapper>
@@ -37,14 +26,14 @@ export const Contact = () => {
     )
 }
 
-// export const query = graphql`
-// query contactImg{
-//     contactImg: file(relativePath: {eq: "contact.jpg"}) {
-//       childImageSharp {
-//         fluid(maxWidth: 500) {
-//                   ...GatsbyImageSharpFluid
-//         }
-//       }
-//     }
-//   }
-// `
+export const query = graphql`
+query contactImg{
+    contactImg: file(relativePath: {eq: "contact.jpg"}) {
+      childImageSharp {
+        fluid(maxWidth: 500) {
+                  ...GatsbyImageSharpFluid
+        }
+      }
+    }
+  }
+`
