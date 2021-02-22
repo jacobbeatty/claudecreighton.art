@@ -19,7 +19,6 @@ export const Gallery = () => {
                               childImageSharp {
                                 fluid {
                                   base64
-                                  tracedSVG
                                   aspectRatio
                                   src
                                   srcSet

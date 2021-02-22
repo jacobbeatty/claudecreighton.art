@@ -5,3 +5,6 @@ export * from "./Gallery"
 export * from "./Landing"
 export * from './Bio'
 export * from "./Contact"
+export * from "./HonoursGallery"
+export * from './BVAGallery'
+export * from './DrawingGallery'

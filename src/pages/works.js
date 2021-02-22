@@ -6,6 +6,9 @@ import { Gallery } from '../components'
 
 
 const WorksPage = () => {
+
+    const showAll = true;
+
     return (
         <Container>
             <motion.main
@@ -17,7 +20,9 @@ const WorksPage = () => {
                 }}
             >
                 <Filters></Filters>
-                <Gallery></Gallery>
+
+                {showAll && <Gallery />}
+
             </motion.main>
         </Container>
     )

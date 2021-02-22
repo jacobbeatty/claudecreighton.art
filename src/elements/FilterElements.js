@@ -12,11 +12,26 @@ export const FilterWrapper = styled.div`
         list-style-type: none;
         font-size: 1.5em;
         font-style: italic;
-        list-style: bengali;
         font-size: ${props => props.theme.sizes.header};
-    position: ${props => props.theme.positions.fixed};
-    background-color: #fcdadaad;
-        li{
+        position: ${props => props.theme.positions.fixed};
+        background-color: #fcdadaad;
+        display: flex;
+        flex-direction: column;
+
+        text-align: -webkit-match-parent;
+        span{
+            display: flex;
+            align-items: center;
+            padding:  .5vw 0  .5vw 0; 
+            a{
+                text-decoration: none;
+                color: black;
+                font-size: 1.3em;
+                background-color: white;
+            }
+            input{
+                margin-left:.5vw;
+            }
         }
     }
 `
