@@ -63,30 +63,9 @@ module.exports = {
       },
       __key: "art",
     },
-    {
-      resolve: "gatsby-source-filesystem",
-      options: {
-        name: "honours",
-        path: "./src/images/art/honours",
-      },
 
-    },
-    {
-      resolve: "gatsby-source-filesystem",
-      options: {
-        name: "bva",
-        path: "./src/images/art/bva",
-      },
 
-    },
-    {
-      resolve: "gatsby-source-filesystem",
-      options: {
-        name: "drawing",
-        path: "./src/images/art/drawing",
-      },
 
-    },
 
   ],
 };
