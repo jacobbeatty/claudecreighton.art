@@ -3,11 +3,11 @@ import { motion } from 'framer-motion'
 import { ContainerWrapper } from "../elements"
 import { NavBar } from "../components"
 import { bg1Style, bg1MirrorStyle, bg2Style, bg2MirrorStyle, bg3Style, bg3MirrorStyle, bg4Style, bg4MirrorStyle, bg5Style, bg5MirrorStyle } from '../elements'
-import bg1 from '../images/bg/asset 1.svg'
-import bg2 from '../images/bg/asset 2.svg'
-import bg3 from '../images/bg/asset 3.svg'
-import bg4 from '../images/bg/asset 4.svg'
-import bg5 from '../images/bg/asset 5.svg'
+import bg1 from '../images/bg/Asset 1.svg'
+import bg2 from '../images/bg/Asset 2.svg'
+import bg3 from '../images/bg/Asset 3.svg'
+import bg4 from '../images/bg/Asset 4.svg'
+import bg5 from '../images/bg/Asset 5.svg'
 
 
 
