@@ -9,6 +9,7 @@ export const LandingWrapper = styled.div`
     font-size: ${props => props.theme.sizes.header};
 
 
+
 @keyframes yourAnimation{
     0%{
         }
@@ -32,6 +33,15 @@ export const LandingWrapper = styled.div`
             animation: yourAnimation 4s infinite 0s ease-in-out;
             z-index: 2;
             
+        }
+    }
+
+    
+    @media ${props => props.theme.breakpoints.mobile}{
+        .centerWork{
+            img{
+                width: 100%;
+            }
         }
     }
 

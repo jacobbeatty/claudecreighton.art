@@ -34,4 +34,10 @@ export const FilterWrapper = styled.div`
             }
         }
     }
+
+    /* @media ${props => props.theme.breakpoints.mobile}{
+        grid-column: auto;
+        grid-row: auto;
+        width: 85vw;
+    } */
 `

@@ -33,10 +33,10 @@ export const NavWrapper = styled.nav`
     
 
 
-    @media ${props => props.theme.breakpoints.mobile}{
+    /* @media ${props => props.theme.breakpoints.mobile}{
         div{
             visibility: hidden;
         }
-    }
+    } */
 
 `

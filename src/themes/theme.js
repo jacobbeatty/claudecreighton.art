@@ -22,7 +22,7 @@ export default {
         fadeIn: "@keyframes fadeIn {from {opacity: 0;}to {opacity: 1;}}",
     },
     opacity: {
-        bg: "45%",
+        bg: "100%",
     },
     layers: {
         bg: "-1",

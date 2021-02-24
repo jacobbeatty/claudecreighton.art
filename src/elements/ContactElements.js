@@ -16,11 +16,11 @@ export const ContactWrapper = styled.div`
     }
 
     .contactText{
-        background-color: #ffffffc4;
+        background-color: #ffffffe8;
         font-size: 1.37vw;
         padding: 1vw;
         height: 43vw;
-        animation: bioAnimation 2s 1 0s ease-in-out;
+        /* animation: bioAnimation 2s 1 0s ease-in-out; */
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -49,6 +49,42 @@ export const ContactWrapper = styled.div`
         }
     100%{
         background-color: #ffffffc4
+        }
+    }
+
+
+    
+    @media ${props => props.theme.breakpoints.mobile}{
+        justify-content: normal;
+        flex-direction: column;
+
+        .contactImg{
+            width: inherit;
+            height: 40%;
+        }
+
+        .contactText{
+            span{
+                justify-content: normal;
+                height: inherit;
+                width: 100%;
+                white-space: pre-wrap;
+                word-wrap: break-word;
+
+                h1{
+                    font-size: 1rem;
+                    
+                }
+                p{
+                    padding-bottom: 1vw;
+                    padding-top: 1vw;
+                    font-size: .8rem;
+                    color: red;
+                }
+       
+            }
+
+            height: inherit;
         }
     }
 

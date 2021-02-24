@@ -1,9 +1,8 @@
 import * as React from "react"
 import { Container } from "../components"
 import { motion } from 'framer-motion'
-import { Bio } from '../components'
 import { BioWrapper } from '../elements'
-import bioImg from '../images/other/bioImg.jpg'
+
 import Img from 'gatsby-image'
 
 const BioPage = ({ data }) => {

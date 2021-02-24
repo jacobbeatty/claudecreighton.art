@@ -4,11 +4,13 @@ import { motion } from 'framer-motion'
 import { Filters } from '../components'
 import { Gallery } from '../components'
 
+import { useBreakpoint, withBreakpoints } from 'gatsby-plugin-breakpoints';
+
+
 
 const WorksPage = () => {
 
-    const showAll = true;
-
+    const breakpoints = useBreakpoint();
     return (
         <Container>
             <motion.main
@@ -19,9 +21,9 @@ const WorksPage = () => {
                     duration: 1
                 }}
             >
-                <Filters></Filters>
+                {breakpoints.md ? null : <Filters />}
 
-                {showAll && <Gallery />}
+                <Gallery />
 
             </motion.main>
         </Container>

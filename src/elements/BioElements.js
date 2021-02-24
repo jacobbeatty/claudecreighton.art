@@ -14,11 +14,11 @@ export const BioWrapper = styled.div`
     }
 
     .bioText{
-        background-color: #ffffffc4;
+        background-color: #ffffffe8;
         font-size: 1.5vw;
         padding: 1vw;
         height: 43vw;
-        animation: bioAnimation 2s 1 0s ease-in-out;
+        /* animation: bioAnimation 2s 1 0s ease-in-out; */
         text-align: center;
         font-weight: 500;
 
@@ -42,6 +42,20 @@ export const BioWrapper = styled.div`
         align-self: center;
         width: 51vw;
     }
+
+    @media ${props => props.theme.breakpoints.mobile}{
+        flex-direction: column;
+        justify-content: normal;
+        .bioImg {
+            width: inherit;
+            height: inherit;
+        }
+        .bioText{
+            font-size: 1rem;
+            height: inherit;
+        }
+    }
+
 
 `
 

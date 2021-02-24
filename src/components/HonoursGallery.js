@@ -2,6 +2,8 @@ import React from 'react'
 import { GalleryWrapper } from '../elements'
 import Img from "gatsby-image"
 import { StaticQuery, graphql } from 'gatsby'
+import { SRLWrapper } from "simple-react-lightbox";
+
 export const HonoursGallery = () => {
 
   return (
@@ -10,7 +12,7 @@ export const HonoursGallery = () => {
         query={
           graphql`
                     {
-                        allFile(filter: {sourceInstanceName: {eq: "honours"}}) {
+                        allFile(filter: {relativeDirectory: {eq: "honours"}}) {
                           edges {
                             node {
                               id
@@ -39,10 +41,44 @@ export const HonoursGallery = () => {
             `
         }
         render={data => (
-          <div className="image ">{data.allFile.edges.map((edge) => (<Img fluid={edge.node.childImageSharp.fluid} alt={edge.node.name} />))}</div>
+          <SRLWrapper options={options} className="SRLWrapper">
+            <div className="image ">{data.allFile.edges.map((edge) => (<Img fluid={edge.node.childImageSharp.fluid} alt={edge.node.name} />))}</div>
+          </SRLWrapper>
         )}
       />
-
     </GalleryWrapper>
   )
+}
+
+const options = {
+  buttons: {
+    backgroundColor: 'transparent',
+    iconColor: 'white',
+    iconPadding: '10px',
+    showAutoplayButton: false,
+    showCloseButton: true,
+    showDownloadButton: false,
+    showFullscreenButton: false,
+    showNextButton: true,
+    showPrevButton: true,
+    showThumbnailsButton: false,
+    size: '40px'
+  },
+  caption: {
+    captionColor: "white",
+    captionFontFamily: "Newsreader",
+    captionTextTransform: "uppercase",
+    captionFontSize: "1.5em"
+  },
+  thumbnails: {
+    showThumbnails: false,
+    // thumbnailsAlignment: 'center',
+    // thumbnailsContainerBackgroundColor: 'transparent',
+    // thumbnailsContainerPadding: '0',
+    // thumbnailsGap: '0 1px',
+    // thumbnailsIconColor: '#ffffff',
+    // thumbnailsOpacity: 0.4,
+    // thumbnailsPosition: 'bottom',
+    // thumbnailsSize: ['100px', '80px']
+  }
 }
