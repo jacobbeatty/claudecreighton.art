@@ -4,9 +4,9 @@ import styled from 'styled-components'
 
 
 const MenuIcon = styled.button`
-    position: fixed;
+    /* position: fixed;
     top: 1rem;
-    right: 1rem;
+    right: 1rem; */
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -42,29 +42,33 @@ const MenuIcon = styled.button`
 const MenuLinks = styled.nav`
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: start;
     align-items: center;
     text-align: center;
     height: 100%;
     width: 100%;
-    background-color: white;
+    background-color: #fffffff0;
     position: absolute;
     z-index: 10;
+    padding-top: 10vw;
     top: 0;
     right: 0;
     transition: transform 200ms;
     transform: ${({ nav }) => (nav ? "translateX(0)" : "translateX(100%)")};
-    Link{
+    text-decoration: none;
+    a{
         text-decoration: none;
         color: black;
+        font-size: 3rem;
+        padding: 1rem;
     }
 `
 
 const MobileName = styled(props => <Link {...props} />)`
 
-    position: fixed;
+    /* position: fixed;
     top: 1rem;
-    left: 1rem;
+    left: 1rem; */
     font-size: 1.25rem;
     z-index: 10;
     text-decoration: none;
@@ -73,12 +77,27 @@ const MobileName = styled(props => <Link {...props} />)`
 
 `
 
+const MobileNavMenu = styled.div`
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    padding-left: 5%;
+    padding-top: 2%;
+    padding-right: 5%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+
+`
+
+
 export const MobileNav = ({ children }) => {
 
     const [nav, showNav] = useState(false)
     return (
 
-        <div>
+        <MobileNavMenu>
             <MobileName to="/">
                 CLAUDE <br /> CREIGHTON
             </MobileName>
@@ -96,7 +115,7 @@ export const MobileNav = ({ children }) => {
 
 
 
-        </div>
+        </MobileNavMenu>
 
 
     )
