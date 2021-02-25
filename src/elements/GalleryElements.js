@@ -36,7 +36,14 @@ export const GalleryWrapper = styled.div`
     @media ${props => props.theme.breakpoints.mobile}{
         grid-column: auto;
         grid-row: auto;
-        width: 85vw;
+        width: 89vw;
+        .image{
+        div{
+            width:33%
+        }
     }
+    }
+
+
 
 `

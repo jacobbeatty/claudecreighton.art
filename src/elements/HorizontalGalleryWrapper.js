@@ -32,7 +32,7 @@ export const HorizontalGalleryWrapper = styled.div`
        }
     }
 
-    @media ${props => props.theme.breakpoints.mobile}{
+    @media ${props => props.theme.breakpoints.mobile} {
         grid-column: auto;
         grid-row: auto;
         width: 85vw;

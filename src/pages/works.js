@@ -46,7 +46,7 @@ const WorksPage = () => {
             >
 
                 {/* {breakpoints.md ? null : <HorizontalGallery />} */}
-                {breakpoints.l ? <Gallery /> : <HorizontalGallery />}
+                {breakpoints.sm ? <Gallery /> : <HorizontalGallery />}
 
 
             </motion.main>
