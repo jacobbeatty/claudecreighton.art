@@ -51,7 +51,7 @@ export const LandingWrapper = styled.div`
         }
     }
 
-    @media only screen and (min-width: 1023px) and (max-height: 1367px) {
+    @media only screen and (min-width: 1023px) and (max-height: 1367px) and (orientation: portrait) {
         .centerWork{
             justify-content: center;
             img{

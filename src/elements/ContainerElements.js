@@ -114,7 +114,7 @@ export const ContainerWrapper = styled.div`
             bottom: -5%!important;
         }
     }
-    @media only screen and (min-width: 1023px) and (max-height: 1367px) {
+    @media only screen and (min-width: 1023px) and (max-height: 1367px) and (orientation: portrait){
         .biga{
             width: 20vw!important;
             /* opacity: 40%; */

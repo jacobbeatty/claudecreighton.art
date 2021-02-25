@@ -7,3 +7,4 @@ export * from './LandingElements'
 export * from './BioElements'
 
 export * from './ContactElements'
+export * from './HorizontalGalleryWrapper'
