@@ -15,12 +15,7 @@ export const GalleryWrapper = styled.div`
 
 
     .SRLWrapper{
-        div{
-            width: 100%;
-        }
-        .css-1yn0gya{
-            height: 100%
-        }
+
     }
     div{
         display: flex;

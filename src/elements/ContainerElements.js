@@ -25,6 +25,10 @@ export const ContainerWrapper = styled.div`
     grid-template-rows: 100vh;
 
     }
+
+    /* .biga{
+        opacity: 90%!important;
+    } */
     .bgSvgs{
         opacity: ${props => props.theme.opacity.bg};
         z-index: ${props => props.theme.layers.bg};
@@ -33,16 +37,22 @@ export const ContainerWrapper = styled.div`
         }
 
     }
-
     @media ${props => props.theme.breakpoints.mobile}{
-        .bgSvgs{
-            img{
-                width: 15vw;
-            }
-
+        .biga{
+            width: 20vw!important;
+            opacity: 40%;
         }
-
+        .grapes{
+            top: 40%!important;
+        }
+        .knife{
+            top: 20%!important;
+        }
+        .hatguy{
+            bottom: -5%!important;
+        }
     }
+
 
 `
 

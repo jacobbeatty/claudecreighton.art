@@ -10,14 +10,14 @@ const MenuIcon = styled.button`
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    width: 1.5rem;
-    height: 1.5rem;
+    width: 1.7rem;
+    height: 1.7rem;
     background-color: transparent;
     border: none;
     cursor: pointer;
     z-index: 11;
     div{
-        width: 1.5rem;
+        width: 1.7rem;
         height: .33rem;
         background-color: black;
         transform-origin: 1px;
@@ -60,7 +60,7 @@ const MenuLinks = styled.nav`
         text-decoration: none;
         color: black;
         font-size: 3rem;
-        padding: 1rem;
+        padding: 3rem;
     }
 `
 
@@ -73,17 +73,16 @@ const MobileName = styled(props => <Link {...props} />)`
     z-index: 10;
     text-decoration: none;
     color: black;
+    height: 10vw;
 
 
 `
 
 const MobileNavMenu = styled.div`
-    width: 100%;
+    /* width: 100%;
     height: 100%;
-    position: absolute;
-    padding-left: 5%;
+    position: absolute; */
     padding-top: 2%;
-    padding-right: 5%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;

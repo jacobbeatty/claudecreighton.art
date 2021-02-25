@@ -7,6 +7,7 @@ export const LandingWrapper = styled.div`
     align-items: left;
     justify-content: space-between;
     font-size: ${props => props.theme.sizes.header};
+    height: fit-content;
 
 
 
@@ -28,6 +29,8 @@ export const LandingWrapper = styled.div`
         justify-content: center;
         margin-top: -5vw;
         overflow: hidden;
+        height: fit-content;
+
         img{
             width: 65%;
             animation: yourAnimation 4s infinite 0s ease-in-out;
@@ -39,8 +42,11 @@ export const LandingWrapper = styled.div`
     
     @media ${props => props.theme.breakpoints.mobile}{
         .centerWork{
+            justify-content: start;
             img{
                 width: 100%;
+                align-self: self-start;
+                padding-top: 22vw;
             }
         }
     }

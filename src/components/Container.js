@@ -24,16 +24,16 @@ export const Container = ({ children }) => {
             <SimpleReactLightbox>
 
                 <div className="bgSvgs" >
-                    <img src={bg1} alt="" style={bg1Style} />
-                    <img src={bg1} alt="" style={bg1MirrorStyle} />
-                    <img src={bg2} alt="" style={bg2Style} />
-                    <img src={bg2} alt="" style={bg2MirrorStyle} />
-                    <img src={bg3} alt="" style={bg3Style} />
-                    <img src={bg3} alt="" style={bg3MirrorStyle} />
-                    <img src={bg4} alt="" style={bg4Style} />
-                    <img src={bg4} alt="" style={bg4MirrorStyle} />
-                    <img src={bg5} alt="" style={bg5Style} />
-                    <img src={bg5} alt="" style={bg5MirrorStyle} />
+                    <img className="biga" src={bg1} alt="" style={bg1Style} />
+                    <img className="biga" src={bg1} alt="" style={bg1MirrorStyle} />
+                    <img className="biga knife" src={bg2} alt="" style={bg2Style} />
+                    <img className="biga knife" src={bg2} alt="" style={bg2MirrorStyle} />
+                    <img className="biga grapes" src={bg3} alt="" style={bg3Style} />
+                    <img className="biga grapes" src={bg3} alt="" style={bg3MirrorStyle} />
+                    <img className="biga" src={bg4} alt="" style={bg4Style} />
+                    <img className="biga" src={bg4} alt="" style={bg4MirrorStyle} />
+                    <img className="biga hatguy" src={bg5} alt="" style={bg5Style} />
+                    <img className="biga hatguy" src={bg5} alt="" style={bg5MirrorStyle} />
                 </div>
                 {breakpoints.md ? null : <NavBar />}
                 {breakpoints.md ? <MobileNav /> : null}
