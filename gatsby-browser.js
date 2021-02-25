@@ -3,6 +3,7 @@ import { createGlobalStyle, ThemeProvider } from "styled-components"
 import Theme from "./src/themes/theme"
 import './src/styles/animations.css'
 import { AnimatePresence } from 'framer-motion'
+import bgFull from './src/images/bg/bg2.svg'
 
 const GlobalStyles = createGlobalStyle`
     * {
@@ -18,6 +19,9 @@ const GlobalStyles = createGlobalStyle`
         background-color: ${props => [props.theme.colors.background]};
         height: 100%;
         width: 100%;
+        /* background-image: url(${bgFull});
+        background-repeat: no-repeat;
+  background-size: 100% 100%; */
     }
 
     ::-webkit-scrollbar {

@@ -34,6 +34,16 @@ export const ContainerWrapper = styled.div`
 
     }
 
+    @media ${props => props.theme.breakpoints.mobile}{
+        .bgSvgs{
+            img{
+                width: 15vw;
+            }
+
+        }
+
+    }
+
 `
 
 export const bg1Style = {
