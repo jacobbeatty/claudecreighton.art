@@ -16,7 +16,7 @@ export const BioWrapper = styled.div`
     .bioText{
         background-color: #ffffffe8;
         font-size: 1.5vw;
-        padding: 3vw;
+        padding: 1vw;
         height: 43vw;
         /* animation: bioAnimation 2s 1 0s ease-in-out; */
         text-align: center;
@@ -53,6 +53,7 @@ export const BioWrapper = styled.div`
         .bioText{
             font-size: 1rem;
             height: inherit;
+            padding: 3vw;
         }
     }
 

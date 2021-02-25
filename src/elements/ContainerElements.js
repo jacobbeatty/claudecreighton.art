@@ -1,61 +1,6 @@
 import styled from "styled-components"
 
 
-export const ContainerWrapper = styled.div`
-
-    height: 100%;
-    width: 100%;
-    display: grid;
-    grid-template-columns: 5% 90% 5%;
-    grid-template-rows: 10vh 85vh 5vh;
-
-    main {
-    grid-column: 2 / span 1;
-    grid-row: 2 / 2;
-    /* display: flex;
-    align-items: center;
-    justify-content: space-between; */
-    font-size: ${props => props.theme.sizes.copy};
-    /* overflow-y: scroll; */
-
-
-
-    display: grid;
-    grid-template-columns: 10% 90%;
-    grid-template-rows: 100vh;
-
-    }
-
-    /* .biga{
-        opacity: 90%!important;
-    } */
-    .bgSvgs{
-        opacity: ${props => props.theme.opacity.bg};
-        z-index: ${props => props.theme.layers.bg};
-        img{
-            position: ${props => props.theme.positions.fixed};
-        }
-
-    }
-    @media ${props => props.theme.breakpoints.mobile}{
-        .biga{
-            width: 20vw!important;
-            opacity: 40%;
-        }
-        .grapes{
-            top: 40%!important;
-        }
-        .knife{
-            top: 20%!important;
-        }
-        .hatguy{
-            bottom: -5%!important;
-        }
-    }
-
-
-`
-
 export const bg1Style = {
     width: "10vw",
     top: "64%",
@@ -116,3 +61,78 @@ export const bg5MirrorStyle = {
     bottom: "-8%",
     right: "18%",
 }
+
+
+export const ContainerWrapper = styled.div`
+
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 5% 90% 5%;
+    grid-template-rows: 10vh 85vh 5vh;
+
+    main {
+    grid-column: 2 / span 1;
+    grid-row: 2 / 2;
+    /* display: flex;
+    align-items: center;
+    justify-content: space-between; */
+    font-size: ${props => props.theme.sizes.copy};
+    /* overflow-y: scroll; */
+
+
+
+    display: grid;
+    grid-template-columns: 10% 90%;
+    grid-template-rows: 100vh;
+
+    }
+
+    /* .biga{
+        opacity: 90%!important;
+    } */
+    .bgSvgs{
+        opacity: ${props => props.theme.opacity.bg};
+        z-index: ${props => props.theme.layers.bg};
+        img{
+            position: ${props => props.theme.positions.fixed};
+        }
+
+    }
+    @media ${props => props.theme.breakpoints.mobile}{
+        .biga{
+            width: 20vw!important;
+            /* opacity: 40%; */
+        }
+        .grapes{
+            top: 40%!important;
+        }
+        .knife{
+            top: 20%!important;
+        }
+        .hatguy{
+            bottom: -5%!important;
+        }
+    }
+    @media only screen and (min-width: 1023px) and (max-height: 1367px) {
+        .biga{
+            width: 20vw!important;
+            /* opacity: 40%; */
+        }
+        .grapes{
+            top: 35%!important;
+        }
+        .knife{
+            top: 15%!important;
+        }
+        .hatguy{
+            bottom: -5%!important;
+        }
+        .dripdude{
+            top: 5%!important;
+        }
+    }
+
+
+`
+

@@ -30,8 +30,8 @@ export const Container = ({ children }) => {
                     <img className="biga knife" src={bg2} alt="" style={bg2MirrorStyle} />
                     <img className="biga grapes" src={bg3} alt="" style={bg3Style} />
                     <img className="biga grapes" src={bg3} alt="" style={bg3MirrorStyle} />
-                    <img className="biga" src={bg4} alt="" style={bg4Style} />
-                    <img className="biga" src={bg4} alt="" style={bg4MirrorStyle} />
+                    <img className="biga dripdude" src={bg4} alt="" style={bg4Style} />
+                    <img className="biga dripdude" src={bg4} alt="" style={bg4MirrorStyle} />
                     <img className="biga hatguy" src={bg5} alt="" style={bg5Style} />
                     <img className="biga hatguy" src={bg5} alt="" style={bg5MirrorStyle} />
                 </div>

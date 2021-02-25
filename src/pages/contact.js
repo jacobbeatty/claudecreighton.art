@@ -20,17 +20,20 @@ const ContactPage = ({ data }) =>
                 <Img alt="Exhibition work" className="contactImg" fluid={data.contactImg.childImageSharp.fluid} />
                 <motion.div className="contactText" whileHover={{ scale: 1.01, opacity: 1 }} transition={{ ease: "easeInOut" }}>
                     <span className="enquires">
-                        <h1>ENQUIRES</h1>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, ex!</p>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam, ratione!</p>
+                        <br />
+                        <h1>ENQUIRIES</h1>
+                        <p>Please email for information related to sales or exhibitions.</p>
+                        <p>Commissions are currently open.</p>
                     </span>
                     <span className="links">
+                        <br />
                         <h1>LINKS</h1>
-                        <p>Instagram: <a href="/" target="_blank">@claudecreighton</a></p>
+                        <p>Instagram: <a href="https://www.instagram.com/lordclaude/?hl=en" target="_blank">@claudecreighton</a></p>
                         <p>Email: <a href="/" target="_blank">claude@claudecreighton.art</a></p>
                         <p>Facebook? <a href="/" target="_blank">Facebook?</a></p>
                     </span>
                     <span className="exhibitions">
+                        <br />
                         <h1>EXHIBITIONS</h1>
                         <p>(UPCOMING) MAGIC METAMORPHOUS, SEPTEMBER, URBAN COW</p>
                         <p>(UPCOMING) RED ROOM, SEPTEMBER, BRUNSWICK GALLERY</p>

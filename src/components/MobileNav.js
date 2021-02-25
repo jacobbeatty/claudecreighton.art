@@ -59,7 +59,7 @@ const MenuLinks = styled.nav`
     a{
         text-decoration: none;
         color: black;
-        font-size: 3rem;
+        font-size: 2rem;
         padding: 3rem;
     }
 `

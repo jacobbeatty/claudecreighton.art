@@ -51,5 +51,17 @@ export const LandingWrapper = styled.div`
         }
     }
 
+    @media only screen and (min-width: 1023px) and (max-height: 1367px) {
+        .centerWork{
+            justify-content: center;
+            img{
+                width: 100%;
+                align-self: self-start;
+                padding-top: 22vw;
+            }
+        }
+    }
+
+
 `
 

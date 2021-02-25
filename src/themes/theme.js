@@ -11,7 +11,7 @@ export default {
         highlight: "red",
     },
     breakpoints: {
-        mobile: "only screen and (max-width: 1023px) and (orientation: portrait)",
+        mobile: "only screen and (orientation: portrait)",
         tablet: "only screen and (max-width: 65rem)",
     },
     sizes: {
