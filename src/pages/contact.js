@@ -4,10 +4,16 @@ import { motion } from 'framer-motion'
 import Img from 'gatsby-image'
 import { ContactWrapper } from "../elements"
 import { graphql } from 'gatsby'
+import { Helmet } from "react-helmet"
+
 
 const ContactPage = ({ data }) =>
 (
     <Container>
+        <Helmet>
+            <title>Contact | Claude Creighton</title>
+            <meta name="description" content="Claude Creighton is a multidisciplinary artist from Adelaide, Australia." />
+        </Helmet>
 
         <motion.main
             initial={{ opacity: 0 }}
