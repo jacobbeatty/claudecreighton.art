@@ -59,7 +59,6 @@ export const ContactWrapper = styled.div`
                 width: 100%;
                 white-space: pre-wrap;
                 word-wrap: break-word;
-
                 h1{
                     font-size: 1rem;
                     
