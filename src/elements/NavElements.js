@@ -9,9 +9,6 @@ export const NavWrapper = styled.nav`
     font-size: ${props => props.theme.sizes.header};
     font-weight: 600;
 
-
-
-
     a{
         text-decoration: none;
         color: black;
@@ -29,14 +26,5 @@ export const NavWrapper = styled.nav`
             transition: .5s;
         }
     }
-
-    
-
-
-    /* @media ${props => props.theme.breakpoints.mobile}{
-        div{
-            visibility: hidden;
-        }
-    } */
 
 `

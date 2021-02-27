@@ -8,8 +8,6 @@ export const ContactWrapper = styled.div`
     justify-content: space-between;
     font-size: ${props => props.theme.sizes.header};
 
-
-
     .contactImg{
         width: 40vw;
         height: 43vw;
@@ -17,10 +15,9 @@ export const ContactWrapper = styled.div`
 
     .contactText{
         background-color: #ffffffe8;
-        font-size: 1.37vw;
+        font-size: 1.5vw;
         padding: 1vw;
         height: 43vw;
-        /* animation: bioAnimation 2s 1 0s ease-in-out; */
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -34,22 +31,14 @@ export const ContactWrapper = styled.div`
             padding: 1vw;
             h1{
                 font-size: 2vw;
+                color: red;
             }
             p{
                 font-size: 1.4vw;
+                font-weight: 400;
             }
         }
         
-    }
-
-
-    @keyframes bioAnimation{
-    0%{
-        background-color: ${props => props.theme.colors.background}
-        }
-    100%{
-        background-color: #ffffffc4
-        }
     }
 
 
@@ -79,7 +68,6 @@ export const ContactWrapper = styled.div`
                     padding-bottom: 1vw;
                     padding-top: 1vw;
                     font-size: .8rem;
-                    color: red;
                 }
        
             }

@@ -7,16 +7,10 @@ export const HorizontalGalleryWrapper = styled.div`
     font-size: ${props => props.theme.sizes.header};
     height: max-content;
     flex-direction: row;
-    /* height: 100%; */
-    /* .image{
-        width: fit-content;
-    } */
     overflow: scroll;
     width: 100vw;
     position: relative;
     left: calc(-50vw + 50%);
-
-
    
     .image{
        width: 775vw;

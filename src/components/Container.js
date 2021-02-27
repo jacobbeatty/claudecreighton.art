@@ -1,6 +1,4 @@
-import React, { useState } from 'react'
-import { Link } from 'gatsby'
-import styled from 'styled-components'
+import React from 'react'
 import { ContainerWrapper } from "../elements"
 import { NavBar } from "../components"
 import { bg1Style, bg1MirrorStyle, bg2Style, bg2MirrorStyle, bg3Style, bg3MirrorStyle, bg4Style, bg4MirrorStyle, bg5Style, bg5MirrorStyle } from '../elements'
@@ -11,7 +9,7 @@ import bg4 from '../images/bg/Asset 4.svg'
 import bg5 from '../images/bg/Asset 5.svg'
 
 import SimpleReactLightbox from 'simple-react-lightbox'
-import { useBreakpoint, withBreakpoints } from 'gatsby-plugin-breakpoints';
+import { useBreakpoint } from 'gatsby-plugin-breakpoints';
 import { MobileNav } from './MobileNav'
 
 export const Container = ({ children }) => {

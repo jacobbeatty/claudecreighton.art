@@ -3,6 +3,7 @@ import { Container } from "../components"
 import { motion } from 'framer-motion'
 import Img from 'gatsby-image'
 import { ContactWrapper } from "../elements"
+import { graphql } from 'gatsby'
 
 const ContactPage = ({ data }) =>
 (
@@ -23,14 +24,14 @@ const ContactPage = ({ data }) =>
                         <br />
                         <h1>ENQUIRIES</h1>
                         <p>Please email for information related to sales or exhibitions.</p>
-                        <p>Commissions are currently open.</p>
+                        <p>Commissions are currently <strong>open</strong>.</p>
                     </span>
                     <span className="links">
                         <br />
                         <h1>LINKS</h1>
-                        <p>Instagram: <a href="https://www.instagram.com/lordclaude/?hl=en" target="_blank">@claudecreighton</a></p>
-                        <p>Email: <a href="/" target="_blank">claude@claudecreighton.art</a></p>
-                        <p>Facebook? <a href="/" target="_blank">Facebook?</a></p>
+                        <p>Instagram: <a href="https://www.instagram.com/lordclaude/?hl=en" target="_blank" rel="noreferrer">@claudecreighton</a></p>
+                        <p>Email: <a href="mailto:claude@claudecreighton.art" target="_blank" rel="noreferrer">claude@claudecreighton.art</a></p>
+                        <p>CV: <a href="/cv.pdf">here</a></p>
                     </span>
                     <span className="exhibitions">
                         <br />

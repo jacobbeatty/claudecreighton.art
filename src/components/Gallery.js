@@ -15,32 +15,33 @@ export const Gallery = () => {
       <StaticQuery
         query={
           graphql`
-                    {
-                        allFile(filter: {sourceInstanceName: {eq: "art"}}) {
-                          edges {
-                            node {
-                              id
-                              name
-                              relativePath
-                              childImageSharp {
-                                fluid {
-                                  base64
-                                  aspectRatio
-                                  src
-                                  srcSet
-                                  srcWebp
-                                  srcSetWebp
-                                  sizes
-                                  originalImg
-                                  originalName
-                                  presentationWidth
-                                  presentationHeight
-                                }
-                              }
-                            }
-                          }
-                        }
-                      }
+          {
+            allFile(filter: {sourceInstanceName: {eq: "art"}}, sort: {fields: relativePath}) {
+              edges {
+                node {
+                  id
+                  name
+                  relativePath
+                  childImageSharp {
+                    fluid {
+                      base64
+                      aspectRatio
+                      src
+                      srcSet
+                      srcWebp
+                      srcSetWebp
+                      sizes
+                      originalImg
+                      originalName
+                      presentationWidth
+                      presentationHeight
+                    }
+                  }
+                }
+              }
+            }
+          }
+          
                       
             `
         }

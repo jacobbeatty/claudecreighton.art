@@ -3,7 +3,6 @@ import { HorizontalGalleryWrapper } from '../elements'
 import Img from "gatsby-image"
 import { StaticQuery, graphql } from 'gatsby'
 import { SRLWrapper } from "simple-react-lightbox";
-import styled from 'styled-components';
 export const HorizontalGallery = () => {
 
 
@@ -17,7 +16,7 @@ export const HorizontalGallery = () => {
                 query={
                     graphql`
                     {
-                        allFile(filter: {sourceInstanceName: {eq: "art"}}) {
+                        allFile(filter: {sourceInstanceName: {eq: "art"}}, sort: {fields: relativePath}) {
                           edges {
                             node {
                               id
@@ -41,7 +40,7 @@ export const HorizontalGallery = () => {
                             }
                           }
                         }
-                      }
+                      }                      
                       
             `
                 }

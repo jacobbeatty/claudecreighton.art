@@ -4,9 +4,6 @@ import styled from 'styled-components'
 
 
 const MenuIcon = styled.button`
-    /* position: fixed;
-    top: 1rem;
-    right: 1rem; */
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -66,9 +63,6 @@ const MenuLinks = styled.nav`
 
 const MobileName = styled(props => <Link {...props} />)`
 
-    /* position: fixed;
-    top: 1rem;
-    left: 1rem; */
     font-size: 1.25rem;
     z-index: 10;
     text-decoration: none;
@@ -79,9 +73,7 @@ const MobileName = styled(props => <Link {...props} />)`
 `
 
 const MobileNavMenu = styled.div`
-    /* width: 100%;
-    height: 100%;
-    position: absolute; */
+
     padding-top: 2%;
     display: flex;
     flex-direction: row;
