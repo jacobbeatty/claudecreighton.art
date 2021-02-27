@@ -14,7 +14,7 @@ const GlobalStyles = createGlobalStyle`
         font-family: 'Newsreader', serif;
         font-weight: ${props => props.theme.weights.else};
 
-        background-color: ${props => [props.theme.colors.background]};
+        background-color: "#fcdada";
         height: 100%;
         width: 100%;
     }

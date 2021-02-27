@@ -45,6 +45,9 @@ module.exports = {
     {
       resolve: "gatsby-plugin-manifest",
       options: {
+        name: "Claude Creighton",
+        start_url: "/",
+        background_color: "#fcdada",
         icon: "./src/images/icon.svg",
       },
     },

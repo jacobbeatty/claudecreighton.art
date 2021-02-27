@@ -14,7 +14,7 @@ const GlobalStyles = createGlobalStyle`
         font-family: 'Newsreader', serif;
         font-weight: ${props => props.theme.weights.else};
 
-        background-color: ${props => [props.theme.colors.background]};
+        background-color: "#fcdada";
         height: 100%;
         width: 100%;
     }
@@ -38,11 +38,11 @@ const GlobalStyles = createGlobalStyle`
 `
 
 export const wrapRootElement = ({ element }) => (
-    <ThemeProvider theme={Theme}>
-        <GlobalStyles />
-        {element}
-    </ThemeProvider>
+  <ThemeProvider theme={Theme}>
+    <GlobalStyles />
+    {element}
+  </ThemeProvider>
 )
 export const wrapPageElement = ({ element }) => (
-    <AnimatePresence exitBeforeEnter>{element}</AnimatePresence>
+  <AnimatePresence exitBeforeEnter>{element}</AnimatePresence>
 );
