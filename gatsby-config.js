@@ -8,8 +8,6 @@ module.exports = {
       resolve: `gatsby-plugin-google-fonts`,
       options: {
         fonts: [
-          `roboto`,
-          `Manrope: 400, 700`,
           `Newsreader: 400, 400i, 500, 600, 500i,700,700i `
         ],
         display: 'swap',
