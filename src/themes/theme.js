@@ -7,7 +7,7 @@ export default {
         else: "600",
     },
     colors: {
-        background: "#fcdada",
+        background: "#e3dac9",
         highlight: "red",
     },
     breakpoints: {

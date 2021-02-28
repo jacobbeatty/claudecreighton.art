@@ -5,6 +5,7 @@ import Img from 'gatsby-image'
 import { ContactWrapper } from "../elements"
 import { graphql } from 'gatsby'
 import { Helmet } from "react-helmet"
+import CV from '../CV.pdf'
 
 
 const ContactPage = ({ data }) =>
@@ -35,9 +36,14 @@ const ContactPage = ({ data }) =>
                     <span className="links">
                         <br />
                         <h1>LINKS</h1>
-                        <p>Instagram: <a href="https://www.instagram.com/lordclaude/?hl=en" target="_blank" rel="noreferrer">@claudecreighton</a></p>
-                        <p>Email: <a href="mailto:claude@claudecreighton.art" target="_blank" rel="noreferrer">claude@claudecreighton.art</a></p>
-                        <p>CV: <a href="/cv.pdf">here</a></p>
+                        <p><strong>Instagram:</strong> <a href="https://www.instagram.com/lordclaude/?hl=en" target="_blank" rel="noreferrer">@claudecreighton</a></p>
+                        <p> <strong>Email:</strong> <a href="mailto:claude@claudecreighton.art" target="_blank" rel="noreferrer">claude@claudecreighton.art</a></p>
+                    </span>
+                    <span className="CV">
+                        <br />
+                        <h1>CV</h1>
+                        <p>My CV can be viewed <a target="_blank" rel="noreferrer" href={CV}>here</a>.</p>
+
                     </span>
                     <span className="exhibitions">
                         <br />
