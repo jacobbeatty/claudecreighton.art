@@ -32,13 +32,6 @@ module.exports = {
         showSpinner: true,
       },
     },
-    {
-      resolve: "gatsby-source-contentful",
-      options: {
-        accessToken: "sJxkvpsSa4tV85ctNd_WIDPifD8JqoE2lDjy96hnM7A",
-        spaceId: "9dgxwz4ets7j",
-      },
-    },
     "gatsby-plugin-styled-components",
     {
       resolve: "gatsby-plugin-google-analytics",
